@@ -78,7 +78,7 @@ npm-start() {
 }
 
 ### Redsmin
-alias redsmin='REDSMIN_KEY=5a668f6bcbcc9d950696aacb redsmin'
+alias redsmin.start='open -a "Google Chrome" https://app.redsmin.com && REDSMIN_KEY=5a668f6bcbcc9d950696aacb redsmin'
 
 ### Sublime
 alias sublime='open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
