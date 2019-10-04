@@ -14,9 +14,6 @@ PATH=${PATH}:/usr/local/opt/sqlite/bin
 PATH=${PATH}:/usr/local/opt/openssl@1.1/bin
 PATH=${PATH}:/usr/local/lib/pkgconfig
 
-export ES_HOME=~/Elastic/elasticsearch
-PATH=${ES_HOME}/bin:$PATH
-
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
 PATH=${JAVA_HOME}/bin:$PATH
 
