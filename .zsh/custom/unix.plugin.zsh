@@ -1,5 +1,6 @@
 # Additional UNIX aliases can be found in ~/.oh-my-zsh/lib/*
 
+# Misc
 alias ipconfig='ifconfig'
 alias t='tail'
 alias tf='tail -f'
