@@ -11,6 +11,11 @@ alias zshconfig.env="cd ~/.zsh/custom/ && vi +NERDTree %:p:h"
 alias ohmyzsh="cd ~/.oh-my-zsh && vi oh-my-zsh.sh"
 alias ohmyzsh.lib="cd ~/.oh-my-zsh/lib && vi +NERDTree %:p:h"
 
+# ZSH shortcuts
+alias ':r'=reload
+alias ':z'=zshconfig
+alias ':ze'=zshconfig.env
+
 # Dotfiles Config
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
