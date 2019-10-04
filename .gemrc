@@ -1,0 +1,12 @@
+gem: --bindir /usr/local/bin
+:backtrace:      true
+:benchmark:      false
+:update_sources: true
+:verbose:        true
+:sources:
+  - http://rubygems.org/
+
+install: --no-rdoc --no-ri
+:install: --no-rdoc --no-ri
+update:  --no-rdoc --no-ri
+:update:  --no-rdoc --no-ri
