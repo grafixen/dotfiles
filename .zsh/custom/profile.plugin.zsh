@@ -12,7 +12,7 @@ alias ohmyzsh="cd ~/.oh-my-zsh && vi oh-my-zsh.sh"
 alias ohmyzsh.lib="cd ~/.oh-my-zsh/lib && vi +NERDTree %:p:h"
 
 # Dotfiles Config
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # NX
 alias nx.create='npm init nx-workspace'
