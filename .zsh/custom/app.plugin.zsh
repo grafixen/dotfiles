@@ -82,3 +82,4 @@ alias redsmin.start='open -a "Google Chrome" https://app.redsmin.com && REDSMIN_
 
 ### Sublime
 alias sublime='open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
