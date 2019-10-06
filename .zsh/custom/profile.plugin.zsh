@@ -16,10 +16,6 @@ alias ':r'=reload
 alias ':z'=zshconfig
 alias ':ze'=zshconfig.env
 
-# CTags
-# https://medium.com/adorableio/modern-javascript-ctags-configuration-199884dbcc1
-alias jtags="ctags -R app config lib src && sed -i '' -E '/^(if|switch|function|module\.exports|it|describe).+language:js$/d' tags"
-
 # Dotfiles Config
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
