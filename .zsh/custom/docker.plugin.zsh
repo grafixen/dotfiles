@@ -25,12 +25,18 @@ alias dks='docker service'
 alias dkst="docker stack"
 alias dksw="docker swarm"
 
+# Get IP for container
 dk-ip() {
   docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
 }
 dk-ips() {
   docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
 }
-dkln() {
+# Docker logs for container
+dk-ln() {
   docker logs -f `docker ps | grep $1 | awk '{print $1}'`
+}
+# Bash into the running container
+dk-sh() {
+  docker exec -t -i "$@" /bin/bash
 }
