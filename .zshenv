@@ -14,6 +14,18 @@ PATH=${PATH}:/usr/local/opt/sqlite/bin
 PATH=${PATH}:/usr/local/opt/openssl@1.1/bin
 PATH=${PATH}:/usr/local/lib/pkgconfig
 
+# Python
+PATH=${PATH}:$HOME/Library/Python/3.7/bin
+
+# Fusion
+PATH=${PATH}:/Applications/VMware\ Fusion.app/Contents/Library
+
+# DB Data Path
+export MONGO_DATADIR=/data/mongo/db
+export MYSQL5_DATADIR=/data/mysql/db.5
+export MYSQL8_DATADIR=/data/mysql/db.8
+
+# Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
 PATH=${JAVA_HOME}/bin:$PATH
 
