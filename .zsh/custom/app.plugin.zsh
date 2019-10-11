@@ -38,7 +38,12 @@ alias pi3='pip3'
 alias pi3.upgrade='pi3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pi3 install -U'
 
 ### Mongo
-alias mongod="ulimit -n 2048 && mongod --port 27017 --bind_ip 127.0.0.1 --dbpath /data/db"
+alias mongod="ulimit -n 2048 && mongod --dbpath $MONGO_DATADIR --config /etc/mongod.conf"
+alias mongo="mongo -u \"superman\" --authenticationDatabase \"admin\" -p dfe44a6e"
+
+### MySQL
+alias mysqld5='mysqld_safe --datadir=$MYSQL5_DATADIR'
+alias mysqld8='mysqld_safe --datadir=$MYSQL8_DATADIR'
 
 ### Vim
 alias vim="nvim"
@@ -83,3 +88,8 @@ alias redsmin.start='open -a "Google Chrome" https://app.redsmin.com && REDSMIN_
 ### Sublime
 alias sublime='open /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 
+### Medis
+alias medis='cd $HOME/Utils/medis && npm start'
+
+### Mongo Data Gen
+alias mgodatagen='cd $HOME/Utils/mgodatagen && ./mgodatagen'
