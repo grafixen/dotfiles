@@ -31,19 +31,16 @@ function fh() {
 }
 
 ### Python
-alias py2="python"
-alias pi2="pip"
-alias py3='python3'
-alias pi3='pip3'
-alias pi3.upgrade='pi3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pi3 install -U'
+alias pip.upgrade='pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
 
 ### Mongo
 alias mongod="ulimit -n 2048 && mongod --dbpath $MONGO_DATADIR --config /etc/mongod.conf"
 alias mongo="mongo -u \"superman\" --authenticationDatabase \"admin\" -p dfe44a6e"
 
 ### MySQL
-alias mysqld5='mysqld_safe --datadir=$MYSQL5_DATADIR'
-alias mysqld8='mysqld_safe --datadir=$MYSQL8_DATADIR'
+alias mysqld5='asdf global mysql $MYSQL5 && mysqld_safe --datadir=$MYSQL5_DATADIR'
+alias mysqld8='asdf global mysql $MYSQL8 && mysqld_safe --datadir=$MYSQL8_DATADIR'
+alias mysql.shutdown='asdf current mysql && mysqladmin -u root -p shutdown'
 
 ### Vim
 alias vim="nvim"
