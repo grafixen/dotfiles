@@ -15,6 +15,7 @@ alias ohmyzsh.lib="cd ~/.oh-my-zsh/lib && vi +NERDTree %:p:h"
 alias ':r'=reload
 alias ':z'=zshconfig
 alias ':ze'=zshconfig.env
+alias ':zu'=upgrade_oh_my_zsh
 
 # Dotfiles Config
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
