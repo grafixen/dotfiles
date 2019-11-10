@@ -189,10 +189,12 @@ plugins=(
   asdf
   brew
   dotenv
+  fzf
   git
   node
   npm
   rsync
+  vscode
   zsh-autosuggestions
   zsh-completions
   zsh-syntax-highlighting
