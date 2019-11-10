@@ -25,6 +25,10 @@ export MONGO_DATADIR=/data/mongo/db
 export MYSQL5_DATADIR=/data/mysql/db.5
 export MYSQL8_DATADIR=/data/mysql/db.8
 
+# MYSQL ASDF VERSION
+export MYSQL5=5.7.27
+export MYSQL8=8.0.17
+
 # Java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
 PATH=${JAVA_HOME}/bin:$PATH
