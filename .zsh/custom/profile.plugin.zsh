@@ -4,6 +4,9 @@ alias -s js=code
 alias -s css=code
 alias -s html=code
 
+# Recursively clean .DS_Store in a given folder
+alias ds.clear='find . -name '.DS_Store' -type f -delete'
+
 # ZSH
 alias reload='source ~/.zshrc'
 alias zshconfig="vi ~/.zshrc"
