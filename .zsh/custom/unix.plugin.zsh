@@ -25,6 +25,8 @@ alias lr='colorls -r'
 alias lf='lr -f'
 alias la='lr -a'
 alias ll='lr -lA --sd'
+alias lt='ll --tree=2' # Show 2 Level Tree
+alias lg='ll --gs --tree=2' # Show with Git Status
 
 # File Listing
 alias df='df -H'
