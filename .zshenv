@@ -5,6 +5,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export ZSH=$HOME/.oh-my-zsh
+export MYVIMRC=$HOME/.config/nvim/init.vim
 
 PATH=${PATH}:.bin
 PATH=${PATH}:/usr/local/opt/mongodb-community@3.6/bin
