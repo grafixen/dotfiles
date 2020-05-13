@@ -10,9 +10,9 @@ alias ds.clear='find . -name '.DS_Store' -type f -delete'
 # ZSH
 alias reload='source ~/.zshrc'
 alias zshconfig="vi ~/.zshrc"
-alias zshconfig.env="cd ~/.zsh/custom/ && vi +NERDTree %:p:h"
+alias zshconfig.env="cd ~/.zsh/custom/ && vi +RangerEdit"
 alias ohmyzsh="cd ~/.oh-my-zsh && vi oh-my-zsh.sh"
-alias ohmyzsh.lib="cd ~/.oh-my-zsh/lib && vi +NERDTree %:p:h"
+alias ohmyzsh.lib="cd ~/.oh-my-zsh/lib && vi +RangerEdit"
 
 # ZSH shortcuts
 alias ':r'=reload
@@ -20,8 +20,12 @@ alias ':z'=zshconfig
 alias ':ze'=zshconfig.env
 alias ':zu'=upgrade_oh_my_zsh
 
+# File Manager
+alias ':f'=ranger
+
 # Dotfiles Config
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias :df=dotfiles
 
 # NX
 alias nx.create='npm init nx-workspace'

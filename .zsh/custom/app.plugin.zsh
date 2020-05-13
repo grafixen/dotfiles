@@ -14,6 +14,9 @@ function server() {
   python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
+# The Fuck
+eval $(thefuck --alias fck)
+
 ### CTags
 alias ctags="`brew --prefix`/bin/ctags"
 
@@ -30,8 +33,8 @@ function fh() {
   eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
-### Python
-alias pip.upgrade='pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
+### Python Upgrade
+alias :pu='pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
 
 ### Mongo
 alias mongod="ulimit -n 2048 && mongod --dbpath $MONGO_DATADIR --config /etc/mongod.conf"
@@ -45,20 +48,13 @@ alias mysql.shutdown='asdf current mysql && mysqladmin -u root -p shutdown'
 ### Vim
 alias vim="nvim"
 alias vi="vim"
-alias vi.cnf="vi ~/.config/nvim/init.vim"
-alias vi.cnf.plug="vi ~/.config/nvim/plug-manager.vim"
-alias vi.plug.clean="vi +PlugClean +qall"
-alias vi.plug.diff="vi +PlugDiff"
-alias vi.plug.install="vi +PlugInstall +qall"
-alias vi.plug.snapshot="vi +PlugSnapshot"
-alias vi.plug.status="vi +PlugStatus"
-alias vi.plug.update="vi +PlugUpdate"
-alias vi.plug.upgrade="vi +PlugUpgrade"
+alias :vi="vi ~/.config/nvim/init.vim"
+alias :vp="vi ~/.config/nvim/plug-manager.vim"
 
 ### TMUX
 alias tmux.conf="vi ~/.tmux.conf"
 alias ta="tmux attach -t"
-alias tad="tmux attach -d -t"
+alias td="tmux attach -d -t"
 alias ts="tmux new-session -s"
 alias tl="tmux list-sessions"
 alias tksv="tmux kill-server"
